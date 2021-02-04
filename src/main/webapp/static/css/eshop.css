@@ -1,0 +1,80 @@
+/*-----HEADER-----*/
+header{
+	position: relative;
+}
+header .nn-company{
+	position: absolute;
+	left: 5px;
+	bottom: 5px;
+}
+header .nn-company h1{
+	font-family: tahoma;
+	font-weight: bold;
+	color: white;
+	font-size: 45px;
+	text-shadow: 0 0 2px black;
+}
+header .nn-company h4{
+	font-family: tahoma;
+	letter-spacing: 2.2px;
+}
+/*-----MENU-----*/
+.navbar a{
+	font-variant: small-caps;
+}
+.nn-lang a{
+	padding: 10px 0 0 10px !important;
+}
+/*-----ASIDE-----*/
+aside .panel-title{
+	font-variant: small-caps;
+	font-weight: bolder !important;
+}
+aside .nn-cart{
+	font-variant: small-caps;
+}
+aside .nn-cart img{
+	width: 60px;
+}
+aside .nn-cart ul{
+	list-style-type: circle;
+	padding-left: 0px;
+}
+/*-----FOOTER-----*/
+footer a{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+/*--PRODUCT--*/
+.nn-prod .panel-body img{
+	height: 150px;
+	max-width: 98%;
+}
+.nn-prod .panel-title{
+	font-size: smaller;
+	font-variant: small-caps;
+}
+.nn-prod .panel-footer .text-left{
+	font-size: 20px;
+	font-family: impact;
+	color: pink;
+}
+
+.nn-prod .panel{
+	position: relative;
+}
+.nn-prod .panel>img{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.nn-thumb img{
+	width: 80px;
+	height: 80px;
+	border-radius: 5px;
+	box-shadow: 0 0 3px blue;
+	margin: 5px;
+}
+.nn-thumb img:hover{
+	box-shadow: 0 0 5px red;
+}

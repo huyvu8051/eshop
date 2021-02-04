@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Online Shopping Mall</title>
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
+	<!-- jQuery UI -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	
+	<!-- Bootstrap 3 -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	
+	<!-- eShop -->
+	<link rel="stylesheet" href="/static/css/eshop.css">
+	<script src="/static/js/eshop.js"></script>
+</head>
+<body>
+	<div class="container">
+		<!-- HEADER -->
+		<header class="row">
+			<div class="nn-company">
+				<h1>Online Shopping Mall</h1>
+				<h4>The project of professional software developers</h4>
+			</div>
+			<img class="pull-right" src="/static/images/header3.png"/>
+		</header>
+		<!-- MENU -->
+		<nav class="row">
+			<nav class="navbar navbar-inverse">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#"><span class="glyphicon glyphicon-home"></span> E-Shop</a>
+					</div>
+					<div class="collapse navbar-collapse" id="myNavbar">
+						<ul class="nav navbar-nav">
+							 <li><a href="#"><span class="glyphicon glyphicon-info-sign"></span> About Us</a></li>
+							 <li><a href="#"><span class="glyphicon glyphicon-phone-alt"></span> Contact Us</a></li>
+							 <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> Feedback</a></li>
+							 <li><a href="#"><span class="glyphicon glyphicon-question-sign"></span> FAQs</a></li>
+							 <li class="dropdown">
+								<a class="dropdown-toggle" data-toggle="dropdown" href="#"> 
+									<span class="glyphicon glyphicon-user"></span> My Account
+									<span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Sign In</a></li>
+									<li><a href="#">Forgot Password</a></li>
+									<li><a href="#">Sign Up</a></li>
+									<li class="divider"></li>
+									<li><a href="#">Sign Out</a></li>
+									<li><a href="#">Change Password</a></li>
+									<li><a href="#">Edit Profile</a></li>
+									<li class="divider"></li>
+									<li><a href="#">My Orders</a></li>
+									<li><a href="#">My Items</a></li>
+								</ul>
+							</li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right nn-lang">
+							<li><a href="#"><img src="/static/images/en.png"></a></li>
+							<li><a href="#"><img src="/static/images/vi.png"></a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</nav>
+		<!-- MIDDLE -->
+		<div class="row">
+			<!-- BODY -->
+			<article class="col-sm-9">
+				<div class="row" style="margin-right:5px;">
+					<h1>BODY</h1>
+					
+				</div>
+			</article>
+			<!-- ASIDE -->
+			<aside class="col-sm-3">
+				<div class="row">
+					<!-- Cart Info -->
+					<div class="panel panel-danger nn-cart">
+						<div class="panel-heading">
+							<h3 class="panel-title">
+								<span class="glyphicon glyphicon-shopping-cart"></span> Shopping Cart
+							</h3>
+						</div>
+						<div class="panel-body">
+							<div class="col-xs-5 text-center">
+								<img src="/static/images/shopping-cart.gif">
+							</div>
+							<ul class="col-xs-7">
+								<li><strong>25</strong> items</li>
+								<li><strong>125</strong> usd</li>
+								<li><a href="">View Cart</a></li>
+							</ul>						
+						</div>
+					</div>
+					<!-- Search -->
+					<div class="panel panel-info">
+						<div class="panel-heading">
+							<h3 class="panel-title">
+								<span class="glyphicon glyphicon-search"></span> Search
+							</h3>
+						</div>
+						<div class="panel-body">
+							<form action="">
+								<div class="input-group">
+									<input placeholder="Keywords?" class="form-control">
+									<div class="input-group-addon"><span class="glyphicon glyphicon-search"></span></div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<!-- Categories -->
+					<div class="panel panel-success">
+						<div class="panel-heading">
+							<h3 class="panel-title">
+								<span class="glyphicon glyphicon-th-large"></span> Category List
+							</h3>
+						</div>
+						 <div class="list-group">
+							<a href="#" class="list-group-item">Mobiles</a>
+							<a href="#" class="list-group-item">Computers</a>
+							<a href="#" class="list-group-item">Tellevisions</a>
+						</div>
+					</div>
+					<!-- Hot Items -->
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h3 class="panel-title">
+								<span class="	glyphicon glyphicon-fire"></span> Hot Items
+							</h3>
+						</div>
+						 <div class="list-group">
+							<a href="#" class="list-group-item">Best Sellers</a>
+							<a href="#" class="list-group-item">Sales Off</a>
+							<a href="#" class="list-group-item">Favorite Items</a>
+							<a href="#" class="list-group-item">Latest Items</a>
+						</div>
+					</div>					
+				</div>
+			</aside>
+		</div>
+		<!-- FOOTER -->
+		<footer class="row">
+			<div class="panel panel-default text-center">
+				<div class="panel-body">
+					<a href="#"><span class="glyphicon glyphicon-home"></span> Home</a> |
+					<a href="#"><span class="glyphicon glyphicon-info-sign"></span> About Us</a> |
+					<a href="#"><span class="glyphicon glyphicon-phone-alt"></span> Contact Us</a> |
+					<a href="#"><span class="glyphicon glyphicon-envelope"></span> Feedback</a> |
+					<a href="#"><span class="glyphicon glyphicon-question-sign"></span> FAQs</a>
+				</div>
+				<div class="panel-footer">
+					Spring Boot &copy;2020. All rights reserved.
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
