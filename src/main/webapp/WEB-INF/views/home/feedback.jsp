@@ -1,3 +1,3 @@
-<%@ page pageEncoding="utf-8" %>
+<%@ page pageEncoding="utf-8"%>
 
-<h1>GÓP Ý</h1>
+<h2>GÓP Ý</h2>

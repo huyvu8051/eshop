@@ -1,3 +1,3 @@
-<%@ page pageEncoding="utf-8" %>
+<%@ page pageEncoding="utf-8"%>
 
-<h1>LIÊN HỆ</h1>
+<h2>LIÊN HỆ</h2>

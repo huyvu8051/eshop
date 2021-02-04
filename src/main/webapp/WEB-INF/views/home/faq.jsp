@@ -1,3 +1,3 @@
-<%@ page pageEncoding="utf-8" %>
+<%@ page pageEncoding="utf-8"%>
 
-<h1>HỎI - ĐÁP</h1>
+<h2>HỎI &amp; ĐÁP</h2>

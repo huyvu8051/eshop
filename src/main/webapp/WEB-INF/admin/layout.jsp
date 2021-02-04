@@ -5,29 +5,20 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Online Shopping Mall</title>
+	<title>Website Administration</title>
 	<tiles:insertAttribute name="head"/>
 </head>
 <body>
 	<div class="container">
 		<header class="row">
-			<tiles:insertAttribute name="header"/>
+			<h2 class="alert alert-success">Website Administration</h2>
 		</header>
 		<nav class="row">
 			<tiles:insertAttribute name="menu"/>
 		</nav>
-		<div class="row">
-			<article class="col-sm-9">
-				<div class="row" style="margin-right:5px;">
-					<tiles:insertAttribute name="body"/>
-				</div>
-			</article>
-			<aside class="col-sm-3">
-				<div class="row">
-					<tiles:insertAttribute name="aside"/>
-				</div>
-			</aside>
-		</div>
+		<article class="row">
+			<tiles:insertAttribute name="body"/>
+		</article>
 		<footer class="row">
 			<tiles:insertAttribute name="footer"/>
 		</footer>
