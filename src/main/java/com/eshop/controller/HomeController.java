@@ -35,6 +35,6 @@ public class HomeController {
 	@RequestMapping("home/aside/category")
 	public String category(Model model) {
 		model.addAttribute("categories", categoryDAO.findAll());
-		return "nonlayout/layout/_aside-category";
+		return "no-layout/layout/_aside-category";
 	}
 }

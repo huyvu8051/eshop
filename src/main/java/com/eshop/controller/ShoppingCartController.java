@@ -17,7 +17,7 @@ public class ShoppingCartController {
 	@RequestMapping("cart/info")
 	public String info(Model model) {
 		model.addAttribute("cart", shoppingCartService);
-		return "nonlayout/layout/_aside-cart";
+		return "no-layout/layout/_aside-cart";
 	}
 
 	@ResponseBody

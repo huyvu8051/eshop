@@ -1,3 +1,6 @@
-<%@ page pageEncoding="utf-8" %>
+<%@ page pageEncoding="utf-8"%>
+<%@ taglib uri="http://java.sun.com/jstl/core_rt" prefix="c" %>
 
-<h1>TRANG CHỦ</h1>
+<c:import url="/product/slideshow"/>
+<hr>
+<c:import url="/product/random"/>

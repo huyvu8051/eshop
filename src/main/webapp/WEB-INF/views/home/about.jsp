@@ -1,3 +1,3 @@
-<%@ page pageEncoding="utf-8" %>
+<%@ page pageEncoding="utf-8"%>
 
-<h1>GIỚI THIỆU</h1>
+<h2>GIỚI THIỆU</h2>

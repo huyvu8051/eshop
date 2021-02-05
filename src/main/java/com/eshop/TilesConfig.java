@@ -15,11 +15,11 @@ public class TilesConfig {
 		resolver.setViewClass(TilesView.class);
 		return resolver;
 	}
-	
+
 	@Bean("tilesConfigurer")
 	public TilesConfigurer getTilesConfigurer() {
 		TilesConfigurer configurer = new TilesConfigurer();
-		configurer.setDefinitions("/WEB-INF/tiles.xml");  //, "/WEB-INF/admin-tiles.xml"
+		configurer.setDefinitions("/WEB-INF/tiles.xml", "/WEB-INF/admin-tiles.xml");
 		return configurer;
 	}
 }
