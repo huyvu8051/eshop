@@ -19,7 +19,7 @@
 		<put-attribute name="body" value="/WEB-INF/views/{1}/{2}.jsp" />
 	</definition>
 	<!-- User View Without Layout-->
-	<definition name="nonlayout/*/*" template="/WEB-INF/views/no-layout.jsp">
+	<definition name="no-layout/*/*" template="/WEB-INF/views/no-layout.jsp">
 		<put-attribute name="body" value="/WEB-INF/views/{1}/{2}.jsp" />
 	</definition>
 
