@@ -30,8 +30,8 @@
 									<li><a href="/account/change">Change Password</a></li>
 									<li><a href="/account/edit">Edit Profile</a></li>
 									<li class="divider"></li>
-									<li><a href="#">My Orders</a></li>
-									<li><a href="#">My Items</a></li>
+									<li><a href="/order/list">My Orders</a></li>
+									<li><a href="/order/items">My Items</a></li>
 								</c:otherwise>
 							</c:choose>
 

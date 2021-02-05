@@ -5,17 +5,18 @@ import java.util.List;
 import org.springframework.stereotype.Repository;
 
 import com.eshop.entity.Category;
+import com.eshop.entity.Customer;
 import com.eshop.entity.Product;
 
 @Repository
-public class ProductDAO extends EShopDAO<Product, Integer>{
+public class ProductDAO extends EShopDAO<Product, Integer> {
 
 	public List<Product> findByKeywords(String keywords) {
 		String hql = "FROM Product p WHERE p.name LIKE ?0 OR p.category.name LIKE ?1 OR p.category.nameVN LIKE ?2";
-		String kw = "%"+keywords+"%";
+		String kw = "%" + keywords + "%";
 		return getResultList(hql, kw, kw, kw);
 	}
-	
+
 	public List<Product> findByHot(String hotkey) {
 		String hql = "FROM Product";
 		switch (hotkey) {
@@ -37,17 +38,21 @@ public class ProductDAO extends EShopDAO<Product, Integer>{
 	}
 
 	public List<Product> findByIds(String ids) {
-		String hql = "FROM Product p WHERE p.id IN ("+ids+")";
+		String hql = "FROM Product p WHERE p.id IN (" + ids + ")";
 		return getResultList(hql);
 	}
 
 	public List<Product> findByCategory(Category category) {
-		if(category == null) {
+		if (category == null) {
 			category = getSingleResult("FROM Category");
-		}
-		else {
+		} else {
 			factory.getCurrentSession().refresh(category);
 		}
 		return category.getProducts();
+	}
+
+	public List<Product> findByUser(Customer user) {
+		String hql = "SELECT DISTINCT d.product FROM OrderDetail d WHERE d.order.customer.id = ?0";
+		return this.getResultList(hql, user.getId());
 	}
 }
