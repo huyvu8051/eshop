@@ -38,7 +38,7 @@
 	<button class="btn btn-sm  btn-danger btn-cart-clear">
 		<span class="glyphicon glyphicon-remove"></span> Clear
 	</button>
-	<button class="btn btn-sm  btn-warning">
+	<a href="/order/checkout" class="btn btn-sm  btn-warning">
 		<span class="glyphicon glyphicon-heart"></span> Check out
-	</button>
+	</a>
 </div>
